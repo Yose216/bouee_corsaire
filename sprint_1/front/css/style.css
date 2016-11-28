@@ -154,7 +154,7 @@ h1 {
 }*/
 
 a {
-	color: #fff;
+	color: #333;
 	text-decoration: none;
 	border-bottom: 1px dotted;
 }
@@ -262,6 +262,7 @@ button.close {
 	transform: rotateY(180deg);
 	backface-visibility: hidden;
 	transition: all .4s linear;
+    
 }
 
 .login-html .sign-in,
@@ -368,6 +369,7 @@ button.close {
 	border-radius: 2px;
 	position: relative;
 	display: inline-block;
+    background-color: lightgrey;
 }
 
 .login-form .group label .icon:before,
@@ -394,7 +396,7 @@ button.close {
 }
 
 .login-form .group .check:checked + label {
-	color: #333;
+	color: #333;    
 }
 
 .login-form .group .check:checked + label .icon {
