@@ -1,0 +1,107 @@
+<?php
+// src/AppBundle/Entity/User.php
+
+namespace AppBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="fos_user")
+ */
+class User extends BaseUser
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $addresse;
+
+    public function __construct()
+    {
+        parent::__construct();
+    }
+/**
+     * @ORM\Column(type="string")
+     */
+protected $nom;
+
+
+/**
+     * @ORM\Column(type="string")
+     */
+protected $pseudo;
+/**
+     * @ORM\Column(type="string")
+     */
+protected $email;
+/**
+     * @ORM\Column(type="string")
+     */
+protected $password;
+/**
+     * @ORM\Column(type="string")
+     */
+protected $ville;
+/**
+     * @ORM\Column(type="string")
+     */
+protected $region;
+
+/**
+     * @ORM\Column(type="integer")
+     */
+protected $codepostal;
+/**
+     * @ORM\Column(type="integer")
+     */
+protected $ratioheure;
+/**
+     * @ORM\Column(type="integer")
+     */
+protected $compteactif;
+/**
+     * @ORM\Column(type="integer")
+     */
+protected $telephone;
+
+/**
+     * @ORM\Column(type="integer")
+     */
+protected $choix_tel;
+
+/**
+     * @ORM\Column(type="string")
+     */
+protected $img;
+    /**
+     * Set addresse
+     *
+     * @param string $addresse
+     *
+     * @return User
+     */
+    public function setAddresse($addresse)
+    {
+        $this->addresse = $addresse;
+
+        return $this;
+    }
+
+    /**
+     * Get addresse
+     *
+     * @return string
+     */
+    public function getAddresse()
+    {
+        return $this->addresse;
+    }
+}

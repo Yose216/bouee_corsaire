@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+    <!-- CSS -->
+    <link href="{{ app.request.basepath }}/libre/bootstrap.css" rel="stylesheet">
+    <link href="{{ app.request.basepath }}/css/style.css" rel="stylesheet">
+
+
+    <!--    <link rel="stylesheet" href="../../../web/libre/bootstrap.css">
+    <link rel="stylesheet" href="../../../web/css/style.css">-->
+    <!-- SCRIPT -->
+    <!-- <script src="../../../web/libre/jquery-3.1.1.min.js"></script>
+    <script src="../../../web/libre/bootstrap.min.js"></script>-->
+    <!-- TYPOGRAPHIE -->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">-->
+</head>
+
+<body>
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+</body>
+
+</html>
